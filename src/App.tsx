@@ -75,7 +75,7 @@ export function MeshGradient(props: MeshGradientProps) {
   });
 
   React.useEffect(() => {
-    const colors = props.colors ?? ["#E008E5", "#322adb", "#00000"];
+    const colors = props.colors ?? ["#ffffff", "#3d3a3a", "#a6a6a6"];
 
     mesh.initGradient(`#${canvasId}`, colors);
   }, [canvasId, mesh, props.colors]);
